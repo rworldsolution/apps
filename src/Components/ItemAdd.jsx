@@ -1,5 +1,9 @@
 import React from 'react'
 import { useState } from 'react';
+import Select from 'react-select'
+import makeAnimated from 'react-select/animated';
+
+const animatedComponents = makeAnimated();
 import img1 from '../assets/img/placehoder.svg';
 import img2 from '../assets/img/Add-Icon.svg';
 import img3 from '../assets/img/Add_row.svg';
@@ -33,6 +37,20 @@ export default function ItemAdd() {
       setImage(null);
       setImagePreview(null);
     };
+
+    const options = [
+        { value: 'chocolate', label: 'Chocolate' },
+        { value: 'strawberry', label: 'Strawberry' },
+        { value: 'Rishav', label: 'Rishav' },
+        { value: 'List', label: 'List' },
+        { value: 'Mishra', label: 'Mishra' },
+        { value: 'Pay', label: 'Pay' },
+        { value: 'vanilla', label: 'Vanilla' }
+      ]
+
+      const MyComponent = () => (
+        <Select options={options} />
+      )
   return (
     <>
     <div className='page-content'>
@@ -48,21 +66,11 @@ export default function ItemAdd() {
             </div>
             <div className="col-sm-6 mb-10">
                <label for="" className="color_label">Item Name</label>
-               <select className="form-select" aria-label="Select Category">
-                  <option selected="">Select Category</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-               </select>
+               <Select isMulti  options={options} />
             </div>
             <div className="col-sm-6 mb-10">
                <label for="" className="color_label">Sub-Category</label>
-               <select className="form-select" aria-label="Select Sub-Category">
-                  <option selected="">Select Sub-Category</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-               </select>
+               <MyComponent />
             </div>
             <div className="col-sm-6 mb-10">
                <label for="" className="color_label">SKU</label>
@@ -306,7 +314,7 @@ export default function ItemAdd() {
                <option value="2">Two</option>
                <option value="3">Three</option>
             </select>
-            <img src="/assets/images/Add_row.svg" className="ms-10" />
+            <img src={img3} className="ms-10" />
          </div>
       </div>
    </div>
@@ -363,7 +371,7 @@ export default function ItemAdd() {
             <input className="form-control" placeholder="Enter Quantity" />
          </div>
          <div className="col-sm-1 ps-0">
-            <img src="/assets/images/Add_row.svg" className="w-20 mt-5" />
+            <img src={img3} className="w-20 mt-5" />
          </div>
       </div>
    </div>
