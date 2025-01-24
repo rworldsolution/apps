@@ -1,0 +1,54 @@
+<svg id="Group_272733" data-name="Group 272733" xmlns="http://www.w3.org/2000/svg" width="41.857" height="35.416" viewBox="0 0 41.857 35.416">
+  <g id="Group_272732" data-name="Group 272732">
+    <g id="Group_272731" data-name="Group 272731" transform="translate(0 0)">
+      <g id="Group_272730" data-name="Group 272730">
+        <g id="Group_272729" data-name="Group 272729" transform="translate(0 0)">
+          <path id="Path_564778" data-name="Path 564778" d="M11.992,6.085a27.9,27.9,0,0,1,7.474.3A9.415,9.415,0,0,1,26.2,15.1a58.31,58.31,0,0,1-.016,7.249,3.48,3.48,0,0,1-3.211,3.278c-5.116.406-10.75-.314-15.92,0a3.5,3.5,0,0,1-3.224-3.359A60.68,60.68,0,0,1,3.824,15.1a9.388,9.388,0,0,1,8.168-9.016" transform="translate(5.92 9.66)" fill="#202124"/>
+          <path id="Path_564779" data-name="Path 564779" d="M11.8.037a7.365,7.365,0,0,1,7.059,10.988A7.262,7.262,0,0,1,6.737,11.8,7.389,7.389,0,0,1,11.8.037" transform="translate(8.389 0)" fill="#202124"/>
+          <path id="Path_564780" data-name="Path 564780" d="M15.035,22.669c-.2-4.869.912-9.566-2.016-13.807-.282-.408-.757-.853-.99-1.207a.369.369,0,0,1-.093-.272,7.374,7.374,0,0,1,.855-.623,9.549,9.549,0,0,1,6.852-.275c4.9,2.128,2.625,9.215,3.081,13.433A3.6,3.6,0,0,1,19.9,22.669Z" transform="translate(18.991 9.676)" fill="#b7b7b7"/>
+          <path id="Path_564781" data-name="Path 564781" d="M2.973,22.668A3.545,3.545,0,0,1,.15,19.916c-.43-2.746.225-6.385-.031-9.226.775-4.2,4.012-4.948,7.767-4.652a5.581,5.581,0,0,1,3.05,1.343c.031.207-.689.908-.863,1.149a11.839,11.839,0,0,0-1.511,2.791c-1.3,3.547-.505,7.624-.726,11.346Z" transform="translate(0 9.677)" fill="#b7b7b7"/>
+          <path id="Path_564782" data-name="Path 564782" d="M5.194,1.875c6.3-.225,6.753,9.3.606,9.8-6.525.529-7.057-9.571-.606-9.8" transform="translate(0.99 3.028)" fill="#b7b7b7"/>
+          <path id="Path_564783" data-name="Path 564783" d="M16.423,1.875c6.3-.225,6.753,9.3.606,9.8-6.525.529-7.057-9.571-.606-9.8" transform="translate(18.861 3.028)" fill="#b7b7b7"/>
+        </g>
+      </g>
+    </g>
+  </g>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</svg>

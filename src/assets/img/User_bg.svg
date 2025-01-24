@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="175" height="194" viewBox="0 0 175 194">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_225806" data-name="Rectangle 225806" width="175" height="194" rx="6" transform="translate(343.5 482.5)" fill="#fff" stroke="#e4e7ed" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_256655" data-name="Mask Group 256655" transform="translate(-343.5 -482.5)" clip-path="url(#clip-path)">
+    <g id="img-status-7" transform="translate(375.866 438.042)" opacity="0.2">
+      <path id="Path_550773" data-name="Path 550773" d="M1.225,27.561V149.775H130.019V27.561Z" transform="translate(-1.225 44.807)" fill="none" stroke="#212529" stroke-width="1" opacity="0.1"/>
+      <path id="Path_550774" data-name="Path 550774" d="M15.705,17.053V133.118H138.02V17.053Z" transform="translate(-1.416 44.979)" fill="none" stroke="#212529" stroke-width="1" opacity="0.2"/>
+      <path id="Path_550775" data-name="Path 550775" d="M30.185,6.544V116.461H146.02V6.544Z" transform="translate(-1.606 45.149)" fill="none" stroke="#212529" stroke-width="1" opacity="0.3"/>
+      <path id="Path_550776" data-name="Path 550776" d="M44.681-3.981V99.8H154.054V-3.981Z" transform="translate(-1.797 45.319)" fill="none" stroke="#212529" stroke-width="1" opacity="0.4"/>
+      <path id="Path_550777" data-name="Path 550777" d="M59.161-14.49V83.149H162.055V-14.49Z" transform="translate(-1.988 45.49)" fill="none" stroke="#212529" stroke-width="1" opacity="0.5"/>
+      <path id="Path_550778" data-name="Path 550778" d="M73.64-25V66.493h96.416V-25Z" transform="translate(-2.179 45.657)" fill="none" stroke="#212529" stroke-width="1" opacity="0.6"/>
+      <path id="Path_550779" data-name="Path 550779" d="M88.12-35.491V49.851h89.938V-35.491Z" transform="translate(-2.37 45.83)" fill="none" stroke="#212529" stroke-width="1"/>
+      <path id="Path_550780" data-name="Path 550780" d="M102.616-46V33.194h83.459V-46Z" transform="translate(-2.562 46)" fill="none" stroke="#212529" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
