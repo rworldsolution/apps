@@ -5,6 +5,7 @@ import Header from './Components/Header'
 import Dashboard from './Components/Dashboard'
 import Item from './Components/Item'
 import ItemAdd from './Components/ItemAdd'
+import ItemPreview from './ItemPreview'
 function App() {
 
   return (
@@ -12,7 +13,8 @@ function App() {
      <Header />
      {/* <Dashboard /> */}
      {/* <Item /> */}
-     <ItemAdd />
+     {/* <ItemAdd /> */}
+     <ItemPreview />
     </>
   )
 }
