@@ -1,27 +1,26 @@
 import React from 'react'
+// import { useState } from 'react';
+import { Link } from 'react-router-dom';
 const navList = [
   {
     id: 1,
-    name: 'Home',
-    url: '/'
+    name: 'Item',
+    url: '/Item'
   },
   {
     id: 2,
-    name: 'Dashbord',
-    url: '/Dashbord'
+    name: 'Dashboard',
+    url: '/'
   }
 ]
-function clickHandler(select) {
-  {
-    console.log(select);
-  }
-}
-export default function NavBar(props) {
+export default function NavBar() {
   return (
     <nav>
       {navList.map(nav => {
         return (
-          <li onClick={() => clickHandler(`${nav.name}`)} key={nav.id}>{nav.name}</li>
+          <li key={nav.id}>
+            <Link to={nav.url}>{nav.name}</Link>
+          </li>
         )
       })}
     </nav>

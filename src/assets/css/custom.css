@@ -303,6 +303,9 @@
         width: 20px;
         margin-right: 16px;
     }
+    .man-navbar a {
+      color: #fff;
+  }
     /* header Navbar css end */
 
     /* Width property */
