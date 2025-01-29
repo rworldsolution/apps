@@ -305,7 +305,16 @@
     }
     .man-navbar a {
       color: #fff;
+      padding: 8px 20px 8px 10px;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      display: inline-block;
+      width: 100%;
   }
+  .man-navbar a.active {
+    background: #408DFB;
+    color: #fff;
+}
     /* header Navbar css end */
 
     /* Width property */

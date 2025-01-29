@@ -7,12 +7,15 @@ import img5 from '../assets/img/item5.png';
 import img6 from '../assets/img/item6.png';
 import img7 from '../assets/img/item7.png';
 import img8 from '../assets/img/print.svg';
+import { useParams } from 'react-router-dom';
 export default function ItemPreview() {
+    const {id} = useParams();
     return (
         <>
+
             <div className="page-content">
                 <div className="page-content-inner">
-                    <p className="main_heding"><span className="text-primary">Item</span> &gt; Preview</p>
+                    <p className="main_heding"><span className="text-primary">Item</span> &gt; Preview:{id}</p>
                     <div className="box">
                         <div className="row mt-10">
                             <div className="col-sm-5">

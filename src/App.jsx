@@ -7,6 +7,10 @@ import Dashboard from './Components/Dashboard'
 import Item from './Components/Item'
 import ItemAdd from './Components/ItemAdd'
 import ItemPreview from './Components/ItemPreview'
+import Sales from './Components/Sales'
+import SalesAnalyticsChart from './Components/SalesAnalyticsChart'
+import SalesActivity from './Components/SalesActivity'
+import NotFound from './Components/NotFound'
 const router = createBrowserRouter(
   [
     {
@@ -15,7 +19,25 @@ const router = createBrowserRouter(
       <div>
         <Header />
         <Dashboard />
-      </div>
+      </div>,
+      children: [
+        {
+          path: 'Sales',
+          element: <Sales />
+        },
+        {
+          path: 'SalesAnalyticsChart',
+          element: <SalesAnalyticsChart />
+        },
+        {
+          path: 'SalesActivity',
+          element: <SalesActivity />
+        },
+        {
+          path: '*',
+          element: <NotFound />
+        }
+      ]
      
     },
     {
@@ -35,7 +57,7 @@ const router = createBrowserRouter(
     </div>
     },
     {
-      path: "/ItemPreview",
+      path: "/ItemPreview/:id",
       element: 
       <div>
       <Header />
@@ -45,18 +67,9 @@ const router = createBrowserRouter(
   ]
 )
 function App() {
-  // const [selectData, setSelectData] = useState();
 
-  // function clickHandler(selectValue) {
-  //   setSelectData(selectValue);
-  // }
   return (
     <>
-      
-      {/* <Dashboard /> */}
-      {/* <Item /> */}
-      {/* <ItemAdd /> */}
-      {/* <ItemPreview /> */}
       <RouterProvider router={router} />
     </>
   )

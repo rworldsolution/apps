@@ -10,6 +10,7 @@ import Table from './Table';
 import Transactions from './Transactions';
 import ProductDetail from './ProductDetail';
 import SellingProducts from './SellingProducts';
+import { Outlet } from 'react-router-dom';
 export default function Dashboard() {
   const [count , setCount] = useState(0)
   function HandelClick (){
@@ -55,8 +56,10 @@ export default function Dashboard() {
                 <SellingProducts name='Top Selling Products' />
               </div>
         </div>
+        <Outlet />
        </div>
     </div>
+   
     </>
   )
 }
