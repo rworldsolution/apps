@@ -1442,3 +1442,113 @@ ul.pagination {
   background-image: url(../img/drop_select.svg);
   background-size: 11px;
 }
+
+
+/* Configuration  code start here */
+.col_5{
+  flex: 0 0 auto;
+  width: 20%;
+}
+.Configuration_box {
+  background: #FDFDFE 0% 0% no-repeat padding-box;
+  border: 1px solid #E0E0E0;
+  border-radius: 6px;
+  padding: 10px 12px;
+  min-height: 260px;
+  margin-bottom: 15px;
+}
+.Configuration_list{
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+.Configuration_list li{
+  list-style: none;
+  margin-bottom: 4px;
+
+}
+.Configuration_list li a{
+  font-size: 13px;
+  color: #212529;
+}
+.option_badge {
+  background: #EEEEEE 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 4px 8px;
+}
+.dark_box {
+  background-color: #212529;
+  height: 9px;
+  width: 9px;
+  display: inline-block;
+  border-radius: 50%;
+}
+.primary_box {
+  background-color: #00B6FB;
+  height: 9px;
+  width: 9px;
+  display: inline-block;
+  border-radius: 50%;
+}
+.red_box {
+  background-color: #EA4335;
+  height: 9px;
+  width: 9px;
+  display: inline-block;
+  border-radius: 50%;
+}
+.payment_box{
+  background: #FDFDFE 0% 0% no-repeat padding-box;
+border: 1px solid #E0E0E0;
+border-radius: 12px;
+padding: 20px;
+text-align: center;
+align-content: center;
+min-height: 88px;
+}
+.box_pra {
+  margin: 0;
+  display: inline-block;
+  background-color: #EBF3FF;
+  padding: 4px 15px;
+  border-radius: 16px;
+  color: #408DFB;
+  font-size: 13px;
+}
+.btn_data{
+  border: 1px solid #408DFB;
+    border-radius: 12px;
+    color: #212529;
+    background-color: #EBF3FF;
+    padding: 10px 30px 7px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.Sale_box {
+  border: 1px solid #E0E0E0;
+  border-radius: 12px;
+  overflow: hidden;
+  display: inline-block;
+  width: 150px;
+  margin-top: 50px;
+  margin-right: 10px;
+}
+.Sale_box_inner {
+  background: #21263C 0% 0% no-repeat padding-box;
+  border-radius: 12px 12px 0px 0px;
+  color: #fff;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px;
+}
+.box_sale {
+  padding: 15px;
+}
+.order_box{
+  border: 1px solid #B7B7B7;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  padding: 10px 0;
+}

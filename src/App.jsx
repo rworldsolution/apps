@@ -11,6 +11,8 @@ import Sales from './Components/Sales'
 import SalesAnalyticsChart from './Components/SalesAnalyticsChart'
 import SalesActivity from './Components/SalesActivity'
 import NotFound from './Components/NotFound'
+import Configuration from './Components/Configuration'
+import OrganizationDetails from './Components/Configuration/OrganizationDetails'
 const router = createBrowserRouter(
   [
     {
@@ -32,6 +34,11 @@ const router = createBrowserRouter(
         {
           path: 'SalesActivity',
           element: <SalesActivity />
+        },
+        ,
+        {
+          path: 'OrganizationDetails',
+          element: <OrganizationDetails />
         },
         {
           path: '*',
@@ -57,6 +64,14 @@ const router = createBrowserRouter(
     </div>
     },
     {
+      path: '/Configuration',
+      element: 
+      <div>
+      <Header />
+      <Configuration />
+    </div>
+    },
+    {
       path: "/ItemPreview/:id",
       element: 
       <div>
@@ -64,7 +79,15 @@ const router = createBrowserRouter(
       <ItemPreview />
     </div>
     }
-  ]
+  ],
+  {
+    path: "/OrganizationDetails",
+    element: 
+    <div>
+    <Header />
+    <OrganizationDetails />
+  </div>
+  }
 )
 function App() {
 
