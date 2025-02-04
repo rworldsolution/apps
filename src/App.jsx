@@ -35,11 +35,6 @@ const router = createBrowserRouter(
           path: 'SalesActivity',
           element: <SalesActivity />
         },
-        ,
-        {
-          path: 'OrganizationDetails',
-          element: <OrganizationDetails />
-        },
         {
           path: '*',
           element: <NotFound />
@@ -65,11 +60,17 @@ const router = createBrowserRouter(
     },
     {
       path: '/Configuration',
-      element: 
+      element: (
       <div>
       <Header />
       <Configuration />
-    </div>
+    </div>),
+    children: [
+        {
+          path: 'OrganizationDetails',
+          element: <OrganizationDetails />,
+        },
+    ]
     },
     {
       path: "/ItemPreview/:id",
@@ -79,15 +80,7 @@ const router = createBrowserRouter(
       <ItemPreview />
     </div>
     }
-  ],
-  {
-    path: "/OrganizationDetails",
-    element: 
-    <div>
-    <Header />
-    <OrganizationDetails />
-  </div>
-  }
+  ]
 )
 function App() {
 
