@@ -1,11 +1,17 @@
 import React from 'react'
-
+import img1 from '../../assets/img/Configuration_08.svg'
+import { useNavigate } from 'react-router-dom'
 export default function OrganizationDetails() {
+
+   const navigate = useNavigate();
+   function handelClick(){
+      navigate('/Configuration')
+   }
   return (
     <>
         <div className="page-content">
    <div className="page-content-inner">
-      <p className="main_heding"><span className="text-primary">Configuration </span> &gt; Organization Details</p>
+      <p className="main_heding"><span className="text-primary" onClick={handelClick}>Configuration </span> &gt; Organization Details</p>
       <div className="box px-0 min-h-550">
          <div className="row gx-3 px-15">
             <div className="col-sm-3 mb-10">
@@ -49,7 +55,7 @@ export default function OrganizationDetails() {
                   <div className="col-sm-6">
                      <label for="" className="color_label">Organization Logo</label>
                      <div className="form-control text-center min-h-150 align-content-center">
-                        <img src="/assets/images/Configuration_07.svg" />
+                        <img src={img1} />
                         <p className="mb-0 fs-12 fw-600 mt-5">Drag and Drop your files here.</p>
                         <p className="mb-5 text-secondary fs-11">OR</p>
                         <button className="btn_secondary">Browse Files</button>
@@ -58,7 +64,7 @@ export default function OrganizationDetails() {
                   <div className="col-sm-6">
                      <label for="" className="color_label">Banner Image</label>
                      <div className="form-control text-center min-h-150 align-content-center">
-                        <img src="/assets/images/Configuration_07.svg" />
+                        <img src={img1} />
                         <p className="mb-0 fs-12 fw-600 mt-5">Drag and Drop your files here.</p>
                         <p className="mb-5 text-secondary fs-11">OR</p>
                         <button className="btn_secondary">Browse Files</button>

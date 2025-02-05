@@ -59,19 +59,56 @@ const router = createBrowserRouter(
     </div>
     },
     {
-      path: '/Configuration',
-      element: (
+    path: '/Configuration',
+    element: (
       <div>
-      <Header />
-      <Configuration />
-    </div>),
-    children: [
-        {
-          path: 'OrganizationDetails',
-          element: <OrganizationDetails />,
-        },
-    ]
-    },
+        <Header />
+        <Configuration />
+      </div>
+    ),
+  },
+  {
+    path: '/Configuration/OrganizationDetails',
+    element: (
+      <div>
+        <Header />
+        <OrganizationDetails />
+      </div>
+    ),
+  },
+  {
+    path: '/Configuration',
+    element: (
+      <div>
+        <Header />
+        <Configuration />
+      </div>
+    ),
+  },
+  {
+    path: '/Configuration/OrganizationDetails',
+    element: (
+      <div>
+        <Header />
+        <OrganizationDetails />
+      </div>
+    ),
+  },
+    // {
+    //   path: '/Configuration',
+    //   element: (
+    //     <div>
+    //       <Header />
+    //       <Configuration />
+    //     </div>
+    //   ),
+    //   children: [
+    //     {
+    //       path: 'OrganizationDetails',
+    //       element: <OrganizationDetails />,
+    //     },
+    //   ],
+    // },
     {
       path: "/ItemPreview/:id",
       element: 
@@ -87,6 +124,7 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
+      
     </>
   )
 }

@@ -27,6 +27,7 @@ export default function Dashboard() {
     <div className='page-content'>
        <div className='page-content-inner'>
         <p className='main_heding'>Dashboard</p>
+        <Outlet />
         <div className='row gx-2'>
             <Overview />
             <div className='col-sm-6'>
@@ -56,7 +57,7 @@ export default function Dashboard() {
                 <SellingProducts name='Top Selling Products' />
               </div>
         </div>
-        <Outlet />
+     
        </div>
     </div>
    

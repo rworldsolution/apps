@@ -1515,6 +1515,24 @@ min-height: 88px;
   color: #408DFB;
   font-size: 13px;
 }
+.btn_danger {
+  background-color: #FDECEA ;
+  border: 1px solid #EA43354D;
+  border-radius: 4px;
+  color: #EA4335;
+  padding: 3px 10px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.btn_secondary {
+  background-color: #EBF3FF ;
+  border: 1px solid #408DFB;
+  border-radius: 4px;
+  color: #408DFB;
+  padding: 3px 10px;
+  font-size: 13px;
+  line-height: 20px;
+}
 .btn_data{
   border: 1px solid #408DFB;
     border-radius: 12px;
@@ -1551,4 +1569,10 @@ min-height: 88px;
   overflow: hidden;
   position: relative;
   padding: 10px 0;
+}
+
+.form-control{
+  font-size: 13px;
+  font-weight: 400;
+  color: #202124;
 }
