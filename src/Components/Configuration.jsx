@@ -18,7 +18,7 @@
                     id: 1 , URL: 'OrganizationDetails',list1 :'Organization Details'
                 },
                 {
-                    id: 2 , URL: 'Store',list: 'Store'
+                    id: 2 , URL: 'Store',list1: 'Store'
                 }
             ]
         },

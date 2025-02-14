@@ -13,6 +13,7 @@ import SalesActivity from './Components/SalesActivity'
 import NotFound from './Components/NotFound'
 import Configuration from './Components/Configuration'
 import OrganizationDetails from './Components/Configuration/OrganizationDetails'
+import Store from './Components/Configuration/Store'
 const router = createBrowserRouter(
   [
     {
@@ -75,6 +76,15 @@ const router = createBrowserRouter(
         <OrganizationDetails />
       </div>
     ),
+  },
+  {
+    path: '/Configuration/Store',
+    element: (
+      <div>
+        <Header />
+        <Store />
+      </div>
+    )
   },
   {
     path: '/Configuration',
