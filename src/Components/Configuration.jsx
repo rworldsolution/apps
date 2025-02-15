@@ -19,6 +19,9 @@
                 },
                 {
                     id: 2 , URL: 'Store',list1: 'Store'
+                },
+                {
+                    id: 2 , URL: 'Appearance',list1: 'Appearance'
                 }
             ]
         },

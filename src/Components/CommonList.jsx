@@ -5,7 +5,12 @@ import imgExport from '../assets/img/Export.svg';
 import tableFilter from '../assets/img/table-Filter.svg';
 import leftArrow from '../assets/img/left_arrow.svg';
 import rightArrow from '../assets/img/right_arrow.svg';
+import { useNavigate } from 'react-router-dom';
 export default function () {
+  const navigate = useNavigate();
+  function clickHandler (){
+    navigate('../Configuration/ConfigurationStoreAdd')
+  }
   return (
     <>
     <div className='row pb-10 px-15'>
@@ -14,7 +19,7 @@ export default function () {
         <input class="form-control search_common" type="text" placeholder="Search here..."></input>
         </div>
         <div className='col-sm-8 text-end'>
-        <button type="button" className="btn_primary"><img src={add} alt="Add" /> Add</button>
+        <button type="button" onClick={clickHandler} className="btn_primary"><img src={add} alt="Add" /> Add</button>
         <button type="button" className="btn_border mx-10"><img src={imgExport} alt="Filter" /> Export</button>
         <button type="button" class="btn_border me-10"><img class="w-18" src={tableFilter} alt="Filter" /></button>
         <ul className="pagination">

@@ -14,6 +14,10 @@ import NotFound from './Components/NotFound'
 import Configuration from './Components/Configuration'
 import OrganizationDetails from './Components/Configuration/OrganizationDetails'
 import Store from './Components/Configuration/Store'
+import ConfigurationStoreAdd from './Components/Configuration/ConfigurationStoreAdd'
+import Appearance from './Components/Configuration/Appearance'
+import TaxRate from './Components/Configuration/TaxRate'
+import Currency from './Components/Configuration/Currency'
 const router = createBrowserRouter(
   [
     {
@@ -76,6 +80,42 @@ const router = createBrowserRouter(
         <OrganizationDetails />
       </div>
     ),
+  },
+  {
+    path: '/Configuration/ConfigurationStoreAdd',
+    element: (
+      <div>
+        <Header />
+        <ConfigurationStoreAdd />
+      </div>
+    ),
+  },
+  {
+    path: '/Configuration/Appearance',
+    element:(
+      <div>
+        <Header />
+        <Appearance />
+      </div>
+    )
+  },
+  {
+    path: '/Configuration/Currency',
+    element:(
+      <div>
+        <Header />
+        <Currency />
+      </div>
+    )
+  },
+  {
+    path: '/Configuration/TaxRate',
+    element: (
+      <div>
+        <Header />
+        <TaxRate />
+      </div>
+    )
   },
   {
     path: '/Configuration/Store',
